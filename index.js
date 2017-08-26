@@ -15,7 +15,7 @@ $(document).ready(function(){
 var followerURL= "https://api.twitch.tv/kraken/users/freecodecamp/followers/channels/";
  $.getJSON(followerURL, function(data2){
   console.log(data2);
-  for()
+ 
 
    });
    });
