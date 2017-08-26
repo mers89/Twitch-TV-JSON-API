@@ -29,6 +29,10 @@ $(document).ready(function(){
   $("#fccStatus").html("Free Code Camp is currently online");
   }
  });
+ var followerURL= "https://api.twitch.tv/kraken/users/freecodecamp/followers/channels/";
+ $.getJSON(followerURL, function(data2){
+  console.log(data2);
 
 
    });
+ });
