@@ -21,5 +21,6 @@ var followerURL= "https://api.twitch.tv/kraken/users/freecodecamp/followers/chan
   following.push('comster404');
   following.push('brunofin');
   following.push('ESL_SC2');
+  console.log(following);
    });
    });
