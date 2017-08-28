@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
  //free code camp streaam info and status API call
  var url= "https://wind-bow.glitch.me/twitch-api/streams/freecodecamp";
