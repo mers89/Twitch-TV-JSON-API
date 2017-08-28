@@ -18,6 +18,8 @@ var followerURL= "https://api.twitch.tv/kraken/users/freecodecamp/followers/chan
    var displayName=data2.follows[i].channel.display_name;
    following.push(displayName);
   }
-  console.log(following);
+  following.push('comster404');
+  following.push('brunofin');
+  following.push('ESL_SC2');
    });
    });
