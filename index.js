@@ -1,7 +1,7 @@
 //Run our JQUERY
 $(document).ready(function(){
  //Freecodecamp Stream info status API call
- var url= "https://wind-bow.glitch.me/twitch-api/streams/freecodecamp";
+ var url= "https://wind-bow.gomix.me/twitch-api";
  $.getJSON(url,function(data1){
   if(data1.stream===null){
    $("#fccStatus").html("Free Code Camp is currently OFFLINE!");
