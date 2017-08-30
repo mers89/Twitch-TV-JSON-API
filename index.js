@@ -13,7 +13,7 @@ $(document).ready(function(){
      
  });
 
- var followerURL= "https://wind-bow.glitch.me/twitch-api/channels/freecodecamp";  
+ var followerURL= "https://api.twitch.tv/kraken/users/freecodecamp/follows/channels/";  
  $.getJSON(followerURL, function(data2){
  for (var i=0;i<data2.follows.length;i++){
      var displayName= data2.follows[i].channel.display_name;
