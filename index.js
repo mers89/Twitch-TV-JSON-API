@@ -1,5 +1,6 @@
 //Run our JQUERY
 $(document).ready(function(){
+ var following = [];
  //Freecodecamp Stream info status API call
  var url= "https://wind-bow.glitch.me/twitch-api/streams/freecodecamp";
  $.getJSON(url,function(data1){
@@ -17,10 +18,11 @@ var followerURL= "https://wind-bow.glitch.me/twitch-api/users/freecodecamp/follo
 $.getJSON(followerURL, function(data2){
  for (var i=0;i<data2.follows.length;i++){
  var displayName= data2.follows[i].channel.display_name;
-console.log(displayName);
- }
+following.push(displayName);
+ } 
+following.push("counter404");
+following.push("counter404");
+following.push("ESL_SC2");
+console.log(following);
  });
  });
-
-
- 
