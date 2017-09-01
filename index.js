@@ -26,21 +26,30 @@ following.push("ESL_SC2");
  
  //for loop iterate through array
 
-    for(var j=0; j <following.length; j++){
-    var url2 = "https://wind-bow.glitch.me/twitch-api/channels/" + following[j];
- }
-
- });
+    for(var i=0; i <following.length; i++){
+    var url2 = 'https://wind-bow.glitch.me/twitch-api/channels/%22+following[i]+%22?callback=?';
 
 $.getJSON(url2).done(function(data3){
         var logo;
         var status;
         var name;
-
-console.log(following);
+ if (data3.error){
+  console.log(url2);
+  }
 
  });
-
 
  
+ 
+ 
+ }
+ 
+
+
  });
+
+ }
+ 
+ );
+
+
