@@ -27,7 +27,7 @@ following.push("ESL_SC2");
  //for loop iterate through array
 
     for(var i=0; i <following.length; i++){
-    var url2 = 'https://wind-bow.glitch.me/twitch-api/channels/%22+following[i]+%22?callback=?';
+    var url2 = 'https://wind-bow.glitch.me/twitch-api/users/freecodecamp/follows/channels';
 
  $.getJSON(url2, function(data3){
         var logo;
