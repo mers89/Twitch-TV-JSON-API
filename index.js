@@ -25,12 +25,10 @@ $(document).ready(function(){
         var url2 = 'https://wind-bow.glitch.me/twitch-api/channels/'+following[i]+'?callback=?';  
      
 
-    $.getJSON(url2).done(function(data3) {
-      if (data3.error == undefined) {
-       $("#followerinfo")
-          .prepend("<img src='"+ data3.logo + "'>")
-          .prepend("<div>" + data3.name+ "</div>")
-          .append("<div>" + data3.status + "</div>");
+   $("#followerinfo").append('<div class="block">
+                                <img src="'+imgHere+'" class="inline">
+                                <div class="inline">' + data3.status + '</div>
+                             </div>');
       } else {
         var logo= "http://res.cloudinary.com/mers/image/upload/c_scale,w_400/v1504573315/ui-day033-404error_u37kee.png";
          $("#followerinfo")
