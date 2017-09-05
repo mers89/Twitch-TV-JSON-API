@@ -35,7 +35,7 @@ $(document).ready(function(){
         var logo= "http://res.cloudinary.com/mers/image/upload/c_scale,w_400/v1504573315/ui-day033-404error_u37kee.png";
          $("#followerinfo")
           .prepend("<img src='"+ logo + "'>")
-          .appened("<div>" + data3.message+ "</div>")
+          .append("<div>" + data3.message+ "</div>")
           .prepend("<div>" + data3.error + "</div>");
       }});
   }
