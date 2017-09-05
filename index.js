@@ -24,8 +24,11 @@ $(document).ready(function(){
     for(var i=0; i<following.length; i++) {
         var url2 = 'https://wind-bow.glitch.me/twitch-api/channels/'+following[i]+'?callback=?';  
      
+     
+     
+     
 
-   $.getJSON(url2).done(function(data3) {
+    $.getJSON(url2).done(function(data3) {
       if (data3.error == undefined) {
        $("#followerinfo")
        
@@ -43,5 +46,4 @@ $(document).ready(function(){
  });
 });
 
-
-
+       
