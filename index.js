@@ -24,19 +24,15 @@ $(document).ready(function(){
     for(var i=0; i<following.length; i++) {
         var url2 = 'https://wind-bow.glitch.me/twitch-api/channels/'+following[i]+'?callback=?';  
      
-     
-     
-     
 
     $.getJSON(url2).done(function(data3) {
       if (data3.error == undefined) {
        $("#followerinfo")
-       
           .prepend("<img src='"+ data3.logo + "'>")
           .prepend("<div>" + data3.name+ "</div>")
           .prepend("<div>" + data3.status + "</div>");
       } else {
-        var logo= "http://res.cloudinary.com/mers/image/upload/c_scale,w_400/v1504573315/ui-day033-404error_u37kee.png";
+        var logo= "https://media.istockphoto.com/vectors/error-404-vector-id538038858";
          $("#followerinfo")
           .prepend("<img src='"+ logo + "'>")
           .prepend("<div>" + data3.message+ "</div>")
@@ -45,5 +41,4 @@ $(document).ready(function(){
   }
  });
 });
-
        
