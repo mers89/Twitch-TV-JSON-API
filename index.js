@@ -25,20 +25,62 @@ $(document).ready(function(){
         var url2 = 'https://wind-bow.glitch.me/twitch-api/channels/'+following[i]+'?callback=?';  
      
 
-     $.getJSON(url2).done(function(data3) {
+     //$.getJSON(url2).done(function(data3) {
+     // if (data3.error == undefined) {
+    //  $("#followerinfo")
+        //  .prepend("<img src='"+ data3.logo + "'>")
+        //  .prepend("<div>" + data3.name+ "</div>")
+        //  .prepend("<div>" + data3.status + "</div>");
+     // } else {
+       // var logo= "https://media.istockphoto.com/vectors/error-404-vector-id538038858";
+       //  $("#followerinfo")
+          //.prepend("<img src='"+ logo + "'>")
+         // .prepend("<div>" + data3.message+ "</div>")
+         // .prepend("<div>" + data3.error + "</div>");
+     // }});
+     
+           $.getJSON(url2).done(function(data3) {
       if (data3.error == undefined) {
-       $("#followerinfo")
-          .prepend("<img src='"+ data3.logo + "'>")
-          .prepend("<div>" + data3.name+ "</div>")
-          .prepend("<div>" + data3.status + "</div>");
+      $("#logo")
+          .append("<img src='"+ data3.logo + "'>");
       } else {
         var logo= "https://media.istockphoto.com/vectors/error-404-vector-id538038858";
-         $("#followerinfo")
-          .prepend("<img src='"+ logo + "'>")
-          .prepend("<div>" + data3.message+ "</div>")
-          .prepend("<div>" + data3.error + "</div>");
-      }});
+         $("#logo")
+          .append("<img src='"+ logo + "'>") ;
+        }});
+     
+ 
+     
+      $.getJSON(url2).done(function(data3) {
+      if (data3.error == undefined) {
+      $("#displayname")
+         
+          .append("<div>" + data3.name+ "</div>")
+          ;
+      } else {
+        var logo= "https://media.istockphoto.com/vectors/error-404-vector-id538038858";
+         $("#displayname")
+          
+          .append("<div>" + data3.message+ "</div>")
+          ;
+        }});
+     
+     
+     
+      $.getJSON(url2).done(function(data3) {
+      if (data3.error == undefined) {
+      $("#status")
+          
+          .append("<div>" + data3.status + "</div>");
+      } else {
+        var logo= "https://media.istockphoto.com/vectors/error-404-vector-id538038858";
+         $("#status")
+         
+          .append("<div>" + data3.error + "</div>");
+        }});
+     
+     
+     
   }
  });
 });
-       
