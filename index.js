@@ -43,21 +43,6 @@ $(document).ready(function(){
    $.getJson(followerURL, parsedata);
   }
  
-);
+  });
 
-      //$.getJSON(url2).done(function(data3) {
-     // if (data3.error == undefined) {
-    //  $("#followerinfo")
-        //  .prepend("<img src='"+ data3.logo + "'>")
-        //  .prepend("<div>" + data3.name+ "</div>")
-        //  .prepend("<div>" + data3.status + "</div>");
-     // } else {
-       // var logo= "https://media.istockphoto.com/vectors/error-404-vector-id538038858";
-       //  $("#followerinfo")
-          //.prepend("<img src='"+ logo + "'>")
-         // .prepend("<div>" + data3.message+ "</div>")
-         // .prepend("<div>" + data3.error + "</div>");
-     // }});
-  
-  
- 
+     
