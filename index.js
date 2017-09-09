@@ -43,5 +43,4 @@ $(document).ready(function(){
    $.getJson(followerURL, parsedata);
   }
  
-  });
-});     
+
