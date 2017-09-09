@@ -35,7 +35,7 @@ $(document).ready(function(){
       .append("<img src='" + data3.logo + "'>");
     // var logoHeight = 200
      $("#displayname")
-      .append("<div>" + data3.display_name + "</div>");
+      .append('<div style="margin-top: 10em;">' + data3.display_name + "</div>");
 
      $("#status")
       .append("<div>" + data3.status + "</div>");
