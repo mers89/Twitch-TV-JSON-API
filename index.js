@@ -40,7 +40,7 @@ $(document).ready(function(){
      $("#status")
       .append("<div>" + data3.status + "</div>");
    }
-   $.getJson(followerURL, parsedata);
+   $.getJSON(followerURL, parsedata);
   }
  
 
