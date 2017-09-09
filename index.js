@@ -42,5 +42,6 @@ $(document).ready(function(){
    }
    $.getJSON(followerURL, parsedata);
   }
- 
+ });
+ });
 
