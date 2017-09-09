@@ -43,7 +43,7 @@ $(document).ready(function(){
    $.getJson(followerURL, parsedata);
   }
  
-});
+);
 
       //$.getJSON(url2).done(function(data3) {
      // if (data3.error == undefined) {
