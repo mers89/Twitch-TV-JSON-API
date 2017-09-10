@@ -25,12 +25,37 @@ background-image: url("http://natewren.com/themes/wallpaper2/radpack/radpack_4.j
 }
 
 
+a {
+    color: #f7c1fb;
+}
+
+a:link {
+    color: #f7c1fb;
+}
+
+/* visited link */
+a:visited {
+    color: #f7c1fb;
+}
+
+/* mouse over link */
+a:hover {
+    color: gray;
+}
+
+/* selected link */
+a:active {
+    color: #6749a4;
+}
+
+
+
 h1{
 color: white;
 }
 
 h2 {
-color: gray;
+color: white;
 }
 
 h3 {
@@ -64,7 +89,12 @@ color: ;
 </head>
 
 <body>
- <div class="container">
+ <head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ </head>
+
+
+<div class="container">
  <div id="header" class="text-center">
   <h1>Use Twitch TV JSON API</h1>
   <h2>Free Code Camp </h2>
@@ -72,42 +102,47 @@ color: ;
   <h3 id="fccStatus"></h3>
   </a>
  </div>
-   
-   <div class="container-fluid">
+ <br></br>
+ <div class="container-fluid">
   <div class="row">
+   <h1>
+   
+   <div class="col-md-4">
+    Logo:
+   </div>
 
-  <h1>
+ <div class="col-md-4">
+   Display Name:
+  </div>
+ 
+   <div class="col-md-4">
+    Status:
+   </div>
+    <br></br>
+   
+  
+   </h1> 
+    <div class="row">
+  <h2>
   <div class="col-md-4" id="logo">
-   Logo:
+ 
   </div>
   
-   <div class="row">
+  
   <div class="col-md-4" id="displayname">
-   Display Name:
+  
   </div>
   
     
-     <div class="row">
+    
   <div class="col-md-4" id="status">
-   Status:
+ 
     </h1>
   </div>
      
-  </div>
+ 
    </div>
-   <div id="followerinfo">
-   </div>
-
-  <div id="image">
-  </div>
-  </div>
-   <div id="name">
-   </div>
-   <div id="currentstatus">
-   </div>
-  
-      
-      
+   
   
   
 </div>
