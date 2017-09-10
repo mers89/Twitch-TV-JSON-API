@@ -32,13 +32,13 @@ $(document).ready(function(){
   var parsedata = function(data3) {
    console.log(data3)
      $("#logo")
-      .append("<img src='" + data3.logo + "'>");
+      .append("<img class='logo_row' src='" + data3.logo + "'>");
     // var logoHeight = 200
      $("#displayname")
-      .append('<div style="margin-top: 10em;">' + data3.display_name + "</div>");
+      .append('<div class="status_row">' + data3.display_name + "</div>");
 
      $("#status")
-      .append("<div>" + data3.status + "</div>");
+      .append('<div class="status_row">'  + data3.status + "</div>");
    }
    $.getJSON(url2, parsedata);
   }
