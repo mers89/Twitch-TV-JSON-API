@@ -26,12 +26,10 @@ $(document).ready(function(){
      
      console.log(url2)
   
-  
-
- 
-  var parsedata = function(data3) {
-   console.log(data3)
-     $("#logo")
+      
+     $.getJSON(url2).done(function(data3) {
+    if (data3.error == undefined) {
+    $("#logo")
       .append("<img class='logo_row' src='" + data3.logo + "'>");
     // var logoHeight = 200
      $("#displayname")
@@ -39,8 +37,26 @@ $(document).ready(function(){
 
      $("#status")
       .append('<div class="status_row">'  + data3.status + "</div>");
-   }
-   $.getJSON(url2, parsedata);
+      } else {
+        var logo= "http://res.cloudinary.com/mers/image/upload/c_scale,w_175/v1504573315/ui-day033-404error_u37kee.png";
+         $("#logo")
+          .append("<img class='logo_row' src='"+ logo + "'>") ;
+     }});
+     
+
+ 
+  //var parsedata = function(data3) {
+  // console.log(data3)
+   //  $("#logo")
+     // .append("<img class='logo_row' src='" + data3.logo + "'>");
+    // var logoHeight = 200
+    // $("#displayname")
+     // .append('<div class="status_row">' + data3.display_name + "</div>");
+
+     //$("#status")
+   //   .append('<div class="status_row">'  + data3.status + "</div>");
+  // }
+  // $.getJSON(url2, parsedata);
   }
  
 });
