@@ -44,14 +44,14 @@ $(document).ready(function(){
       .append('<div class="status_row">'  + data3.status + "</div>");
       } 
       
- /*     
+     
       else {
         var logo= "http://res.cloudinary.com/mers/image/upload/c_scale,w_175/v1504573315/ui-day033-404error_u37kee.png";
          $("#logo")
           .append("<img class='logo_row' src='"+ logo + "'>") ;
      }});
      
-*/
+
  
   //var parsedata = function(data3) {
   // console.log(data3)
