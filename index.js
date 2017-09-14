@@ -37,8 +37,9 @@ $(document).ready(function(){
     $("#logo")
       .append("<img class='logo_row' src='" + picUrl  + "'>");
     var logoHeight = 200
+     
     
- 
+    
      $("#displayname")
       .append('<div class="status_row">' + data3.display_name + "</div>");
 
