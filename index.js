@@ -37,6 +37,13 @@ $(document).ready(function(){
     $("#logo")
       .append("<img class='logo_row' src='" + picUrl  + "'>");
     var logoHeight = 200
+    
+ var errorDisplayname= "http://res.cloudinary.com/mers/image/upload/c_scale,w_175/v1504573315/ui-day033-404error_u37kee.png";
+      
+    if (data3.error == undefined) {
+    var nameUrl = data3.displayname != null ? data3.displayname : errorDisplayname;   
+    
+    
      $("#displayname")
       .append('<div class="status_row">' + data3.display_name + "</div>");
 
