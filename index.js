@@ -37,26 +37,54 @@ $(document).ready(function(){
     $("#logo")
       .append("<img class='logo_row' src='" + picUrl  + "'>");
     var logoHeight = 200
-     
     
     
-     $("#displayname")
-      .append('<div class="status_row">' + data3.display_name + "</div>");
+    
+    if (data3.display_name != "")
+     {$("#displayname")
+      .append('<div class="status_row">' + data3.display_name + "</div>");}
+     else
+      {$("#displayname")
+      .append('<div class="status_row">' + "no data available" + "</div>");}
+    
+    // $("#displayname")
+     // .append('<div class="status_row">' + data3.display_name + "</div>");
 
-     $("#status")
-      .append('<div class="status_row">'  + data3.status + "</div>");
-      } 
+   //  $("#status")
+     // .append('<div class="status_row">'  + data3.status + "</div>");
+       
       
+     if (data3.status != "")
+     {$("#status")
+      .append('<div class="status_row">' + data3.status+ "</div>");}
+     else
+      {$("#status")
+      .append('<div class="status_row">' + "no data available" + "</div>");}
      
-      else {
-        var logo= "http://res.cloudinary.com/mers/image/upload/c_scale,w_175/v1504573315/ui-day033-404error_u37kee.png";
+     
+     
+      else
+      {var logo= "http://res.cloudinary.com/mers/image/upload/c_scale,w_175/v1504573315/ui-day033-404error_u37kee.png";
+       
          $("#logo")
-          .append("<img class='logo_row' src='"+ logo + "'>") ;
-     }});
+          .append("<img class='logo_row' src='"+  + "'>") ;  }
+    
+    }});
      
 
  
+  //var parsedata = function(data3) {
+  // console.log(data3)
+   //  $("#logo")
+     // .append("<img class='logo_row' src='" + data3.logo + "'>");
+    // var logoHeight = 200
+    // $("#displayname")
+     // .append('<div class="status_row">' + data3.display_name + "</div>");
 
+     //$("#status")
+   //   .append('<div class="status_row">'  + data3.status + "</div>");
+  // }
+  // $.getJSON(url2, parsedata);
   }
  
 });
